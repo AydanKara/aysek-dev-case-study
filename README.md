@@ -28,7 +28,7 @@ The goal of the project was to create more than a simple portfolio. It functions
 - Showcase selected business, portfolio and demo projects
 - Create a clean, modern and responsive user experience
 - Build a scalable structure for future case studies and services
-- Support multilingual content and business-focused communication
+- Support business-focused communication
 - Provide a maintainable admin/content workflow
 - Improve SEO, performance, accessibility and conversion quality
 
@@ -162,37 +162,12 @@ This structure helps keep the project maintainable as more services, case studie
 
 The portfolio is structured to present different types of work:
 
-- **aysek.dev** — personal portfolio and business website
 - **Beautyroom by SARE** — beauty salon website
 - **BUBECK’s Brot & mehr** — bakery website with CMS/admin direction
 - **Aquarien- und Vogelfreunde Fellbach** — local club website project
 - **Sevgi Glow Beauty** — premium beauty studio demo
 - **Aurora Coffee** — creative multi-theme demo concept
-
----
-
-## Screenshots
-
-Screenshots can be added here without exposing private code.
-
-Recommended structure:
-
-```text
-screenshots/
-├── homepage-desktop.png
-├── homepage-mobile.png
-├── services-page.png
-├── portfolio-overview.png
-├── project-detail.png
-└── contact-page.png
-```
-
-Example markdown when screenshots are added:
-
-```md
-![Homepage Desktop](./screenshots/homepage-desktop.png)
-![Homepage Mobile](./screenshots/homepage-mobile.png)
-```
+- and more...
 
 ---
 
