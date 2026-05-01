@@ -158,6 +158,71 @@ This structure helps keep the project maintainable as more services, case studie
 
 ---
 
+## Source Code Structure
+
+The production codebase follows a modular React structure. The exact source code remains private, but the architecture is organized around reusable components, route-level pages, admin modules, search, error handling, performance utilities and Supabase integration.
+
+```text
+src/
+├── components/           # Reusable UI components and page sections
+│   ├── admin/            # Admin panel components with lazy loading
+│   ├── auth/             # Authentication components
+│   ├── about/
+│   │   └── enhanced/     # Enhanced about page and journey sections
+│   ├── contact/          # Contact form components and field structure
+│   │   ├── enhanced-form-fields/
+│   │   └── fields/
+│   ├── cookies/          # GDPR cookie and privacy components
+│   ├── error/            # Error boundaries and recovery UI
+│   ├── lazy/             # Lazy loading wrappers and lazy admin components
+│   ├── search/           # Global search, search modal and filters
+│   ├── ui/               # shadcn/ui base components
+│   │   ├── sidebar/      # Sidebar navigation system
+│   │   └── lightbox/     # Image lightbox and image navigation hooks
+│   ├── home/             # Homepage sections
+│   ├── services/         # Services page sections and enhanced layouts
+│   ├── portfolio/        # Portfolio overview, case studies and project content
+│   └── shared/           # Shared layout and utility components
+├── config/               # Application configuration and admin navigation
+│   ├── adminRoutes.tsx
+│   ├── adminRoutes.definitions.ts
+│   ├── adminRouteGroups.ts
+│   ├── adminRouteUtils.ts
+│   ├── adminNavigationConfig.ts
+│   └── providers.tsx
+├── contexts/             # React context providers
+│   ├── AuthContext.tsx
+│   └── LanguageContext.tsx
+├── hooks/                # Custom React hooks
+│   ├── useContactForm.ts
+│   ├── useContactValidation.ts
+│   ├── useContactFormKeyboard.ts
+│   ├── useFormPersistence.ts
+│   ├── useGlobalSearch.ts
+│   ├── usePreloadRoutes.ts
+│   ├── useTimelineScroll.ts
+│   ├── useErrorHandler.ts
+│   └── useErrorReporting.ts
+├── integrations/
+│   └── supabase/         # Supabase client and generated types
+├── pages/                # Route-level page components
+├── services/             # API, search, cookie consent and error reporting services
+│   ├── cookieConsentService.ts
+│   ├── errorReporting.ts
+│   └── searchService.ts
+├── types/                # TypeScript types for admin, navigation and app data
+├── utils/                # Performance, bundle and helper utilities
+│   ├── bundleOptimization.ts
+│   ├── performance.ts
+│   ├── performanceOptimization.ts
+│   └── webpackChunks.ts
+└── main.tsx              # Application entry point
+```
+
+This structure separates public portfolio pages from admin workflows, search, form logic, error handling and backend integration. It keeps the application scalable as more services, case studies, translations and business features are added.
+
+---
+
 ## Selected Project Sections
 
 The portfolio is structured to present different types of work:
